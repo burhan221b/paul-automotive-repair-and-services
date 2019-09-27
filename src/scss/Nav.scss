@@ -1,6 +1,8 @@
 // References:
 // https://www.youtube.com/watch?v=xMTs8tAapnQ
 // Responsive Menu With Media Queries (Checkbox Trick) - Using Only CSS3
+// https://stackoverflow.com/questions/53805798/how-can-i-get-transitions-on-css-to-work-checkbox
+
 
 $smallScreen: 600px;
 
@@ -53,23 +55,45 @@ $smallScreen: 600px;
         .menu{
             text-align: center;
             width: 100%;
-            display: none;
+            // display: none;
+            height: 0px; /* we start animation from 0px */
+            overflow: hidden; /* without this the contents will be visible regardless of height */
+            transition: height 550ms ease-in-out;  
+            background: white;
+            z-index: 100;  
   
             a {                
                 display: block;
                 border-bottom: 1px solid #EAEAEB;
-                margin: 0;               
+                margin: 0; //mcb
+                width: 100%;
+                cursor: pointer;
+                background: white;
+                opacity: 1;
+                overflow:hidden;
+                z-index: 100;
+                
             }
 
             // For Link highlight
             .active{
                 background: #EAEAEB;
+                width: 100%;
+                cursor: pointer;
             }
         }
-
+        input[type=checkbox]:checked ~ .menu {
+            height: 100vh; /* change height when input is checked */
+          }
         #toggle:checked + .menu {
             display: block;
         }
+
+        // input[type=checkbox]:checked a {
+        //     transform-origin: top;
+        //     transform: scale(1,1);
+        //     transition: transform 400ms ease-in-out;
+        // }
 
     }
 
