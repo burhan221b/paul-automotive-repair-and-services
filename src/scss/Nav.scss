@@ -60,7 +60,8 @@ $smallScreen: 600px;
             overflow: hidden; /* without this the contents will be visible regardless of height */
             transition: height 550ms ease-in-out;  
             background: white;
-            z-index: 100;  
+            z-index: 100 !important;  
+            position: relative; // This helps remove the content from the other components,
   
             a {                
                 display: block;
