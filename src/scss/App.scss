@@ -49,8 +49,25 @@
 // }
 
 //________________________________Main App General Styles Start Here___________________________________
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+div.App{
+    width: 100%;
+    max-width: 1280px;
+    padding: 1em;
+    display: block;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
 html, body{
     width: 100%;
     height: 100%;
     margin: 0;
 }
+
+

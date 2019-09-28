@@ -3,15 +3,50 @@
 // Responsive Menu With Media Queries (Checkbox Trick) - Using Only CSS3
 // https://stackoverflow.com/questions/53805798/how-can-i-get-transitions-on-css-to-work-checkbox
 
-
-$smallScreen: 600px;
+$smallScreen: 500px;
+$mediumScreen: 625px;
+$largeScreen: 825px;
 
 .nav{
     border-bottom: 1px solid #EAEAEB;
     text-align: right;
-    height: 70px;
+    // height: 70px;
+    height: 6rem;
     line-height: 70px;
 
+    // Logo & H1, H2
+    div#logo{
+        position: relative;
+        padding: 0;
+        margin: 0;
+        a {
+            float: left;
+            height: 80px;
+
+            img{
+                padding: 1rem;
+                width: 100px;
+                
+            }
+        }
+
+        h2{
+            font-family: 'Anton', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 100;
+            line-height: 1.2;
+            float: left;
+            text-align: center;
+            position: relative;
+            top: 10px;
+            color: rgb(80, 141, 216)
+        }
+        span.red{
+            color: rgb(242, 103, 103);
+            border-bottom: 2px solid rgb(242, 103, 103);
+        }
+    }
+    // Navigation
     .menu{
         margin: 0 30px 0 0;
 
@@ -21,6 +56,13 @@ $smallScreen: 600px;
             color: gray;
             margin: 0 10px;
             line-height: 70px;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .active{
+            border-bottom: 5px solid gray;
+            width: 100%;
+            cursor: pointer;
         }
     }
 
@@ -41,11 +83,36 @@ $smallScreen: 600px;
 }
 
 //___________________MEDIA QUERY_________________
-@media only screen and (max-width: $smallScreen){
+
+
+@media only screen and (max-width: $largeScreen){
+    .nav{
+        div#logo{
+            h2{
+                font-size: 1rem;
+            }
+        }
+        div.menu{
+            a{
+                margin: 0 5px;
+                font-size: 1rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: $mediumScreen){
     
     // Show the 3 bar menu
     .nav {
-        
+        div#logo{
+            h2.title{
+                font-size: 1.4rem;
+            }
+        }
+
         label {
             display: block;
             cursor: pointer;
@@ -62,18 +129,18 @@ $smallScreen: 600px;
             background: white;
             z-index: 100 !important;  
             position: relative; // This helps remove the content from the other components,
+            top: 0.4rem;
   
             a {                
                 display: block;
                 border-bottom: 1px solid #EAEAEB;
-                margin: 0; //mcb
+                margin: 0,0,0,0; //mcb
                 width: 100%;
                 cursor: pointer;
                 background: white;
                 opacity: 1;
                 overflow:hidden;
-                z-index: 100;
-                
+                z-index: 100;   
             }
 
             // For Link highlight
@@ -81,6 +148,7 @@ $smallScreen: 600px;
                 background: #EAEAEB;
                 width: 100%;
                 cursor: pointer;
+                border-bottom: 0px solid gray;
             }
         }
         input[type=checkbox]:checked ~ .menu {
@@ -97,6 +165,44 @@ $smallScreen: 600px;
         // }
 
     }
+    .nav div.menu a {
+        margin: 0px;
+    }
 
 }
 
+@media only screen and (max-width: $smallScreen){
+    .nav {
+        border-bottom: 2px solid #EAEAEB;
+        height: 15.3rem;
+    }
+    .nav div#logo a {
+        float: left;
+        position: relative;
+        height: 78px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav div#logo h2.title {
+        font-size: 1.4rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav label {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 3.4rem;
+    }
+
+    .nav .menu:active{
+        height: 0px;
+    }
+
+}
