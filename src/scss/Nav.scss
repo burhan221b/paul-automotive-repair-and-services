@@ -7,202 +7,190 @@ $smallScreen: 500px;
 $mediumScreen: 625px;
 $largeScreen: 825px;
 
-.nav{
-    border-bottom: 1px solid #EAEAEB;
-    text-align: right;
-    // height: 70px;
-    height: 6rem;
+.nav {
+  border-bottom: 1px solid #eaeaeb;
+  text-align: right;
+  // height: 70px;
+  height: 6rem;
+  line-height: 70px;
+
+  // Logo & H1, H2
+  div#logo {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    a {
+      float: left;
+      height: 80px;
+
+      img {
+        padding: 1rem;
+        width: 100px;
+      }
+    }
+
+    h2 {
+      font-family: "Anton", sans-serif;
+      font-size: 1.4rem;
+      font-weight: 100;
+      line-height: 1.2;
+      float: left;
+      text-align: center;
+      position: relative;
+      top: 10px;
+      color: rgb(80, 141, 216);
+    }
+    span.red {
+      color: rgb(242, 103, 103);
+      border-bottom: 2px solid rgb(242, 103, 103);
+    }
+  }
+  // Navigation
+  .menu {
+    margin: 0 30px 0 0;
+
+    a {
+      clear: right;
+      text-decoration: none;
+      color: gray;
+      margin: 0 10px;
+      line-height: 70px;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .active {
+      border-bottom: 5px solid gray;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+
+  // Toggle
+  label {
+    margin: 0 40px 0 0;
+    font-size: 2rem;
     line-height: 70px;
+    display: none;
+    width: 2rem;
+    float: right;
+  }
 
-    // Logo & H1, H2
-    div#logo{
-        position: relative;
-        padding: 0;
-        margin: 0;
-        a {
-            float: left;
-            height: 80px;
-
-            img{
-                padding: 1rem;
-                width: 100px;
-                
-            }
-        }
-
-        h2{
-            font-family: 'Anton', sans-serif;
-            font-size: 1.4rem;
-            font-weight: 100;
-            line-height: 1.2;
-            float: left;
-            text-align: center;
-            position: relative;
-            top: 10px;
-            color: rgb(80, 141, 216)
-        }
-        span.red{
-            color: rgb(242, 103, 103);
-            border-bottom: 2px solid rgb(242, 103, 103);
-        }
-    }
-    // Navigation
-    .menu{
-        margin: 0 30px 0 0;
-
-        a {
-            clear: right;
-            text-decoration: none;
-            color: gray;
-            margin: 0 10px;
-            line-height: 70px;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-        .active{
-            border-bottom: 5px solid gray;
-            width: 100%;
-            cursor: pointer;
-        }
-    }
-
-    // Toggle
-    label{
-        margin: 0 40px 0 0;
-        font-size: 2rem;
-        line-height: 70px;
-        display: none;
-        width: 2rem;
-        float: right;
-    }
-
-    // Hide the Checkbox Input
-    #toggle {
-        display: none;
-    }
+  // Hide the Checkbox Input
+  #toggle {
+    display: none;
+  }
 }
 
 //___________________MEDIA QUERY_________________
 
-
-@media only screen and (max-width: $largeScreen){
-    .nav{
-        div#logo{
-            h2{
-                font-size: 1rem;
-            }
-        }
-        div.menu{
-            a{
-                margin: 0 5px;
-                font-size: 1rem;
-                font-weight: 700;
-            }
-        }
+@media only screen and (max-width: $largeScreen) {
+  .nav {
+    div#logo {
+      h2 {
+        font-size: 1rem;
+      }
     }
-
+    div.menu {
+      a {
+        margin: 0 5px;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+    }
+  }
 }
 
-@media only screen and (max-width: $mediumScreen){
-    
-    // Show the 3 bar menu
-    .nav {
-        div#logo{
-            h2.title{
-                font-size: 1.4rem;
-            }
-        }
-
-        label {
-            display: block;
-            cursor: pointer;
-            
-        }
-
-        .menu{
-            text-align: center;
-            width: 100%;
-            // display: none;
-            height: 0px; /* we start animation from 0px */
-            overflow: hidden; /* without this the contents will be visible regardless of height */
-            transition: height 550ms ease-in-out;  
-            background: white;
-            z-index: 100 !important;  
-            position: relative; // This helps remove the content from the other components,
-            top: 0.4rem;
-  
-            a {                
-                display: block;
-                border-bottom: 1px solid #EAEAEB;
-                margin: 0,0,0,0; //mcb
-                width: 100%;
-                cursor: pointer;
-                background: white;
-                opacity: 1;
-                overflow:hidden;
-                z-index: 100;   
-            }
-
-            // For Link highlight
-            .active{
-                background: #EAEAEB;
-                width: 100%;
-                cursor: pointer;
-                border-bottom: 0px solid gray;
-            }
-        }
-        input[type=checkbox]:checked ~ .menu {
-            height: 100vh; /* change height when input is checked */
-          }
-        #toggle:checked + .menu {
-            display: block;
-        }
-
-        // input[type=checkbox]:checked a {
-        //     transform-origin: top;
-        //     transform: scale(1,1);
-        //     transition: transform 400ms ease-in-out;
-        // }
-
-    }
-    .nav div.menu a {
-        margin: 0px;
-    }
-
-}
-
-@media only screen and (max-width: $smallScreen){
-    .nav {
-        border-bottom: 2px solid #EAEAEB;
-        height: 15.3rem;
-    }
-    .nav div#logo a {
-        float: left;
-        position: relative;
-        height: 78px;
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav div#logo h2.title {
+@media only screen and (max-width: $mediumScreen) {
+  // Show the 3 bar menu
+  .nav {
+    div#logo {
+      h2.title {
         font-size: 1.4rem;
-        display: block;
-        width: 100%;
-        text-align: center;
+      }
     }
 
-    .nav label {
+    label {
+      display: block;
+      cursor: pointer;
+    }
+
+    .menu {
+      text-align: center;
+      width: 100%;
+      // display: none;
+      height: 0px; /* we start animation from 0px */
+      overflow: hidden; /* without this the contents will be visible regardless of height */
+      transition: height 550ms ease-in-out;
+      background: white;
+      z-index: 100 !important;
+      position: relative; // This helps remove the content from the other components,
+      top: 0.4rem;
+
+      a {
         display: block;
+        border-bottom: 1px solid #eaeaeb;
+        margin: 0, 0, 0, 0; //mcb
+        width: 100%;
         cursor: pointer;
-        text-align: center;
+        background: white;
+        opacity: 1;
+        overflow: hidden;
+        z-index: 100;
+      }
+
+      // For Link highlight
+      .active {
+        background: #eaeaeb;
         width: 100%;
-        margin: 0 auto;
-        font-size: 3.4rem;
+        cursor: pointer;
+        border-bottom: 0px solid gray;
+      }
+    }
+    input[type="checkbox"]:checked ~ .menu {
+      height: 100vh; /* change height when input is checked */
+    }
+    #toggle:checked + .menu {
+      display: block;
     }
 
-    .nav .menu:active{
-        height: 0px;
+    // input[type=checkbox]:checked a {
+    //     transform-origin: top;
+    //     transform: scale(1,1);
+    //     transition: transform 400ms ease-in-out;
+    // }
+  }
+  .nav div.menu a {
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: $smallScreen) {
+  .nav {
+    border-bottom: 2px solid #eaeaeb;
+    height: 15.3rem;
+
+    div#logo a {
+      float: left;
+      position: relative;
+      height: 78px;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    div#logo h2.title {
+      font-size: 1.4rem;
+      display: block;
+      width: 100%;
+      text-align: center;
     }
 
+    label {
+      display: block;
+      cursor: pointer;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      font-size: 3.4rem;
+    }
+  }
 }
