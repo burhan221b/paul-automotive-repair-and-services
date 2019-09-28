@@ -3,8 +3,8 @@
 // Responsive Menu With Media Queries (Checkbox Trick) - Using Only CSS3
 // https://stackoverflow.com/questions/53805798/how-can-i-get-transitions-on-css-to-work-checkbox
 
-$smallScreen: 500px;
-$mediumScreen: 625px;
+$smallScreen: 510px;
+$mediumScreen: 660px;
 $largeScreen: 825px;
 
 .nav {
@@ -24,8 +24,9 @@ $largeScreen: 825px;
       height: 80px;
 
       img {
-        padding: 1rem;
-        width: 100px;
+        // padding: 1rem;
+        // width: 100px;
+        height: 80px;
       }
     }
 
