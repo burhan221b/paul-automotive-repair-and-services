@@ -22,7 +22,7 @@ class Nav extends React.Component {
                         <NavLink className="" to="/" exact>
                             <img className='animated fadeInDown' src="./Images/logo/logo.png" alt="Paul Nguyen Automotive Repair Service" />
                         </NavLink>
-                        <h2 className='title'>Complete Automotive Repair<br /><span className="red">(408)245-2122</span></h2>
+                        <h2 className='title'>Complete Automotive Repair<br /><a href="tel:4082452122"><span className="red">(408)245-2122</span></a></h2>
                     </div>
                     {/* All for Navigation links and Toggle */}
                     <label htmlFor="toggle">&#9776;</label>

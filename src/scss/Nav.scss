@@ -25,8 +25,8 @@ $largeScreen: 825px;
 
       img {
         // padding: 1rem;
-        // width: 100px;
-        height: 80px;
+        width: 100px;
+        // height: 80px;
       }
     }
 
@@ -40,6 +40,14 @@ $largeScreen: 825px;
       position: relative;
       top: 10px;
       color: rgb(80, 141, 216);
+
+      a {
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+        height: 1.7rem;
+        // width: 0;
+      }
     }
     span.red {
       color: rgb(242, 103, 103);
@@ -177,6 +185,12 @@ $largeScreen: 825px;
       display: block;
       width: 100%;
       text-align: center;
+
+      img {
+        width: 150px;
+        position: relative;
+        top: -20px;
+      }
     }
     div#logo h2.title {
       font-size: 1.4rem;
