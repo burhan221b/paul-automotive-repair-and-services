@@ -67,6 +67,11 @@ $largeScreen: 825px;
       line-height: 70px;
       font-size: 1.5rem;
       //   font-weight: 700;
+
+      // Hover effect
+      &:hover {
+        background: #d1dae3;
+      }
     }
     .active {
       border-bottom: 5px solid rgb(80, 141, 216);
@@ -138,7 +143,7 @@ $largeScreen: 825px;
       background: white;
       z-index: 100 !important;
       position: relative; // This helps remove the content from the other components,
-      top: 0.4rem;
+      top: 0.3rem;
 
       a {
         display: block;
