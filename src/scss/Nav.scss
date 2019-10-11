@@ -70,11 +70,11 @@ $largeScreen: 825px;
 
       // Hover effect
       &:hover {
-        background: #d1dae3;
+        border-bottom: 5px solid #f26767;
       }
     }
     .active {
-      border-bottom: 5px solid rgb(80, 141, 216);
+      border-bottom: 5px solid rgb(80, 141, 216) !important;
       //   border-radius: 5px;
       border-bottom-left-radius: 2px;
       border-bottom-right-radius: 2px;
@@ -114,6 +114,15 @@ $largeScreen: 825px;
         margin: 0 5px;
         font-size: 1rem;
         // font-weight: 700;
+        &:hover {
+          background: #d1dae3;
+          border-bottom: 0px;
+        }
+
+        .active {
+          background: rgb(80, 141, 216) !important;
+          border-bottom: 0px;
+        }
       }
     }
   }
