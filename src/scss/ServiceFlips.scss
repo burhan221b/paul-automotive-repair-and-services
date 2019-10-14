@@ -39,12 +39,12 @@
   font-size: 2rem;
   color: rgb(80, 141, 216);
   //   background: white !important;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .front {
   //   background: url();
-  margin: 0 auto;
-  padding: 1rem;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -53,4 +53,12 @@
 
 .back {
   //   background-image: url(https://drscdn.500px.org/photo/411569/q%3D80_m%3D2000/v2?webp=true&sig=a3940c83c845f30b3e741012aba95eb2148c879a2bfd84fca81b23925484d413);
+  p{
+      font-size: 1rem;
+      font-weight: normal;
+      line-height: 1.5;
+      color: #F26767;
+
+
+  }
 }

@@ -1,0 +1,86 @@
+$body-color: #333a4d;
+
+$df-dark-blue: #003a79;
+$df-sky-blue: #00b3e7;
+$df-orange: #f78d28;
+$df-bg-gray: #eff0f2;
+
+h1 {
+  font-family: sans-serif;
+  color: #545454;
+}
+
+/*RATING CARD*/
+.yelp-card{
+    margin:1rem 0;
+}
+.rating__card {
+  box-shadow: 0px 15px 50px -18px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  padding: 30px;
+  font-family: sans-serif;
+  color: #545454;
+  font-weight: 100;
+  background: url("") no-repeat center center;
+  border-radius: 10px;
+  /* background: url('') no-repeat center center, linear-gradient($df-dark-blue, $df-sky-blue); */
+  background-size: cover;
+  background: $df-bg-gray;
+  width: 100%;
+//   max-width: 400px;
+//   min-height: 476px;
+max-width: 400px;
+max-height: 476px;
+// max-height: 900px;
+min-width: 300px;
+// min-height: 476px;
+min-height: 600px;
+width: 30vw;
+// height: 30vw;
+margin:0;
+}
+.rating__card__quote {
+  padding: 30px 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.2;
+  font-size: 20px;
+  line-height: 1.54;
+}
+.fa-star {
+  color: #545454;
+}
+.checked {
+  color: $df-orange;
+}
+.rating__card__stars {
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+.rating__card__stars__name {
+  font-size: 1.4rem;
+  margin: 0 0 0 5px;
+}
+.rating__card__bottomText {
+  margin: 10px auto 15px;
+  text-align: center;
+  font-size: 1rem;
+  color: #083B66;
+  &:hover{
+      font-weight: 700;
+  }
+}
+
+
+// Media Query
+@media only screen and (max-width: 320) {
+//     .rating__card {
+//         max-width: 300px;
+// max-height: 476px;
+// min-width: 300px;
+// min-height: 476px;
+// width: 30vw;
+// height: 30vw;
+//     }
+}
