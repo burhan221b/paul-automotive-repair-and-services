@@ -349,7 +349,7 @@ div.main-grid {
 }
 
 @media only screen and (max-width: 500px) {
-  .box:hover {
+  div.main-grid section.grid-2 .box:hover {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
@@ -373,13 +373,25 @@ div.main-grid {
   }
 }
 
-@media only screen and (max-width: 320) {
+@media only screen and (max-width: 330px) {
+  div.main-grid section.grid-1 .headline {
+    h2 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.4rem;
+    }
+  }
+
   #root > div > div > section.grid-3 > div {
     div {
       grid-auto-rows: minmax(300, auto);
       justify-items: center;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+  }
+  div.main-grid .headline-credits {
+    top: 98%;
   }
 }
 

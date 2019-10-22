@@ -71,4 +71,8 @@
     margin: 0;
     overflow: hidden;
   }
+
+  div.main-grid section.grid-2 .service-cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  }
 }

@@ -95,3 +95,12 @@ h1 {
     width: 80vw;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .yelp-card {
+    width: 95%;
+  }
+  .rating__card {
+    margin: 0 1.5rem 2rem 0;
+  }
+}
