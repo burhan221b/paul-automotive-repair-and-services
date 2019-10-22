@@ -14,7 +14,7 @@ export default class ServiceFlips extends React.Component {
         const { flipped } = this.state
         const { front, back } = this.props
         return (
-            <Spring native to={{ transform: `perspective(600px) rotateY(${flipped ? 180 : 0}deg)` }}>
+            <Spring native to={{ transform: `perspective(800px) rotateY(${flipped ? 180 : 0}deg)` }}>
                 {props => (
                     <animated.div className="card" onClick={this.click} style={props}>
                         <Transition native unique items={flipped} from={hide} enter={show} leave={hide}>

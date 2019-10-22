@@ -4,6 +4,8 @@
   position: relative;
   max-width: 500px;
   max-height: 500px;
+  // max-width: 400px;
+  // max-height: 400px;
   min-width: 300px;
   min-height: 300px;
   width: 20vw;
@@ -53,12 +55,20 @@
 
 .back {
   //   background-image: url(https://drscdn.500px.org/photo/411569/q%3D80_m%3D2000/v2?webp=true&sig=a3940c83c845f30b3e741012aba95eb2148c879a2bfd84fca81b23925484d413);
-  p{
-      font-size: 1rem;
-      font-weight: normal;
-      line-height: 1.5;
-      color: #F26767;
+  p {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #f26767;
+  }
+}
 
-
+@media only screen and (max-width: 400px) {
+  .card {
+    max-width: 350px;
+    max-height: 350px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
   }
 }

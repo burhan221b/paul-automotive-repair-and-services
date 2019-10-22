@@ -80,21 +80,20 @@ export default function Home() {
             </section>
             {/* Location & About */}
             <section className="grid-3">
-            <img src="./Images/svg/auto.svg" alt="background image" />
+                {/* <img src="./Images/svg/auto.svg" alt="background image" /> */}
                 <h2>About Us</h2>
                 <div className="about-container">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </div>
                 <div className="reivews">
-                <h2><span className="yelp-font">yelp</span> Reivews</h2>
-                <div className="grid-reivews">
-                <YelpReviewCard name={"Linda H."} quote={"it's true, Paul is a life saver! We are from out of town visiting family and our car started overheating. We took the car to Mathilda Valero Auto Repair for a diagnosis and quote for repair. He is honest!! and a good mechanic! That speaks volumes about his character. He gave his profess…"} reviewlink={"https://www.yelp.com/biz/mathilda-valero-station-auto-services-sunnyvale?hrid=7fzvSWILXmmmJTwbLmCcnQ"}/>
+                    <h2><span className="yelp-font">yelp</span> Reivews</h2>
+                    <div className="grid-reivews">
+                        <YelpReviewCard name={"Linda H."} quote={"it's true, Paul is a life saver! We are from out of town visiting family and our car started overheating. We took the car to Mathilda Valero Auto Repair for a diagnosis and quote for repair. He is honest!! and a good mechanic! That speaks volumes about his character. He gave his profess…"} reviewlink={"https://www.yelp.com/biz/mathilda-valero-station-auto-services-sunnyvale?hrid=7fzvSWILXmmmJTwbLmCcnQ"} />
 
-                <YelpReviewCard name={"Nakata D."} quote={"I had my car cheked in here because of the engine light on. I thought there was sth wrong with my engine. But they have good and honest mechanic here who told me that I just need to change the oil and reset the light. They also have nice price of changing oil and free estimate if your have has any …"} reviewlink={"https://www.yelp.com/biz/mathilda-valero-station-auto-services-sunnyvale?hrid=IlGxYGG5Ug60ZAQUKePTGA"}/>
-                <YelpReviewCard name={"Kiwi W."} quote={"Paul is great - always on schedule, very patient, and tells me exactly what should be fixed and what doesn't really need to be fixed.I drive an old honda ('91) that looks like and is indeed falling apart and a friend recommended me to go to Paul. He took a look at the car and told me a couple of…"} reviewlink={"https://www.yelp.com/biz/mathilda-valero-station-auto-services-sunnyvale?hrid=Pn5UpP0rbGcpqjhzG9KSyA"}/>
+                        <YelpReviewCard name={"Nakata D."} quote={"I had my car cheked in here because of the engine light on. I thought there was sth wrong with my engine. But they have good and honest mechanic here who told me that I just need to change the oil and reset the light. They also have nice price of changing oil and free estimate if your have has any …"} reviewlink={"https://www.yelp.com/biz/mathilda-valero-station-auto-services-sunnyvale?hrid=IlGxYGG5Ug60ZAQUKePTGA"} />
+                        <YelpReviewCard name={"Kiwi W."} quote={"Paul is great - always on schedule, very patient, and tells me exactly what should be fixed and what doesn't really need to be fixed.I drive an old honda ('91) that looks like and is indeed falling apart and a friend recommended me to go to Paul. He took a look at the car and told me a couple of…"} reviewlink={"https://www.yelp.com/biz/mathilda-valero-station-auto-services-sunnyvale?hrid=Pn5UpP0rbGcpqjhzG9KSyA"} />
+                    </div>
                 </div>
-                </div>
-                <h3>Location</h3>
             </section>
 
 
@@ -102,13 +101,27 @@ export default function Home() {
             <footer className="grid-4 main-footer">
                 <div className="footer-1 footer-image">
                     <img className="footer-img" src="./Images/images/maarten-van-den-heuvel-gZXx8lKAb7Y-unsplash.jpg" alt="Bay Area" />
+
+                    <h3>Need Service? Just Call, Or Show Up - That Simple</h3>
+                    <div class="headline">
+                        <ul>
+                            <p>Address</p>
+                            <li>498 N. Mathilda Avenue, Sunnyvale, CA 94085</li>
+                            <p>Business Hours</p>
+                            <li>Open 7 Days: <span>8:30 AM</span> - <span>6 PM</span></li>
+                            <p>Direct Contact</p>
+                            <li>Phone: <a href="tel:4082452122">(408) 245 - 2122</a></li>
+                            <li>Fax:(408) 245 - 1211</li>
+                        </ul>
+                    </div>
                     <div className="credits headline-credits">Photo by Maarten van den Heuvel on Unsplash</div>
                 </div>
+
                 <section className="footer-2">
                     {/* Credits */}
                     {/* Burhan */}
                     {/* <div className="burhan"><Link to="https://www.github.com/burhan221b"><img src="./Images/logo/Burhan221b-logo2.png" width="50" alt="Created by Burhan" /></Link> &copy;2019. Proudly Created by Burhan</div> */}
-                    <div className="burhan"><a href="https://www.github.com/burhan221b"><img src="./Images/logo/Burhan221b-logo2.png" width="50" alt="Created by Burhan" /></a> &copy;2019. Proudly Created by Burhan</div>
+                    <div className="burhan"><a href="https://www.github.com/burhan221b"><img src="./Images/logo/Burhan221b-logo2.png" width="25" alt="Created by Burhan" /></a> &copy;2019. Proudly Created by Burhan</div>
                     {/* Freepik */}
                     {/* <div className="">Icons made by <Link to="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</Link> from <Link to="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</Link></div> */}
                     <div className="">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
