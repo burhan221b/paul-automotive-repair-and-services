@@ -13,11 +13,14 @@ import Services from './components/Services';
 import About from './components/About';
 import Contact from './components/Contact';
 
+function initializeAnalytics() {
+  ReactGA.initialize('UA-150659608-1');
+  ReactGA.pageview(window.location.pathname + window.location.search);
 
-ReactGA.initialize('UA-150659608-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
+}
 
 const App = () => {
+  initializeAnalytics();
   return (
     <Router>
       <div className="App">
