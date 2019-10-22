@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -11,6 +12,10 @@ import Home from './components/Home';
 import Services from './components/Services';
 import About from './components/About';
 import Contact from './components/Contact';
+
+
+ReactGA.initialize('UA-150659608-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => {
   return (
