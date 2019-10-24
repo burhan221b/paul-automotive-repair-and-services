@@ -121,7 +121,7 @@ export default function Home() {
                     {/* Credits */}
                     {/* Burhan */}
                     {/* <div className="burhan"><Link to="https://www.github.com/burhan221b"><img src="./Images/logo/Burhan221b-logo2.png" width="50" alt="Created by Burhan" /></Link> &copy;2019. Proudly Created by Burhan</div> */}
-                    <div className="burhan"><a href="https://www.github.com/burhan221b"><img src="./Images/logo/Burhan221b-logo2.png" width="25" alt="Created by Burhan" /></a> &copy;2019. Proudly Created by Burhan</div>
+                    <div className="burhan"><a href="https://www.github.com/burhan221b"><img src="./Images/logo/Burhan221b-logo3.png" width="25" alt="Created by Burhan" /></a> &copy;2019. Proudly Created by Burhan</div>
                     {/* Freepik */}
                     {/* <div className="">Icons made by <Link to="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</Link> from <Link to="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</Link></div> */}
                     <div className="">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
