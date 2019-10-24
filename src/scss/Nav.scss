@@ -9,7 +9,7 @@ $largeScreen: 825px;
 
 .info-banner {
   width: 100%;
-  background-color: #6e2aed;
+  background-color: #083b66;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
   font-size: 1.5rem;
@@ -41,44 +41,79 @@ $largeScreen: 825px;
 }
 
 .nav {
-  border-bottom: 1px solid #083b6630;
-  text-align: right;
-  // height: 70px;
-  height: 6rem;
-  line-height: 70px;
+  // border-bottom: 1px solid #083b6630;
+  // text-align: right;
+  // height: 6rem;
+  // line-height: 70px;
+
+  // New Code
+  position: relative;
+  font-family: "Anton", sans-serif;
+  display: flex;
+  justify-content: space-between;
 
   // Logo & H1, H2
   div#logo {
     position: relative;
-    padding: 0;
-    margin: 0;
+    padding: 1rem;
+    margin: 0 2rem;
+    display: inline-block;
     a {
-      float: left;
-      height: 80px;
+      // float: left;
+      // height: 100px;
+
+      // new code
+      text-decoration: none;
+      h1,
+      h2 {
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        // margin-bottom: ;
+        color: #890406;
+        font-weight: 200;
+      }
+      .blue {
+        color: #083b66;
+        font-size: 3rem;
+      }
+      .wrench {
+        font-size: 1.3rem;
+        transform: rotate(-25deg);
+        position: absolute;
+        // top: -20px;
+      }
 
       img {
         // padding: 1rem;
-        width: 100px;
+        // width: 100px; //for original logo
         // height: 80px;
+
+        // new code
       }
     }
-
+    // New Code
     h2 {
-      font-family: "Anton", sans-serif;
-      font-size: 1.4rem;
-      font-weight: 100;
-      line-height: 1.2;
-      float: left;
-      text-align: center;
-      position: relative;
-      top: 10px;
-      color: rgb(80, 141, 216);
+      // font-family: "Anton", sans-serif;
+      // font-size: 1.4rem;
+      // font-weight: 100;
+      // line-height: 1.2;
+      // float: left;
+      // text-align: center;
+      // position: relative;
+      // top: 10px;
+      // color: rgb(80, 141, 216);
 
       a {
-        text-decoration: none;
-        padding: 0;
-        margin: 0;
-        height: 1.7rem;
+        // text-decoration: none;
+        // padding: 0;
+        // margin: 0;
+        // height: 1.7rem;
         // width: 0;
       }
     }
@@ -136,6 +171,9 @@ $largeScreen: 825px;
 //___________________MEDIA QUERY_________________
 
 @media only screen and (max-width: $largeScreen) {
+  .info-banner {
+    font-size: 1rem;
+  }
   .nav {
     div#logo {
       h2 {
@@ -164,9 +202,14 @@ $largeScreen: 825px;
 @media only screen and (max-width: $mediumScreen) {
   // Show the 3 bar menu
   .nav {
+    // new code
+    display: block;
+    // end of new code
     div#logo {
-      h2.title {
-        font-size: 1.4rem;
+      // display: block;
+      a h2 {
+        // font-size: 1.4rem;
+        // text-align: center;
       }
     }
 
@@ -227,10 +270,21 @@ $largeScreen: 825px;
 }
 
 @media only screen and (max-width: $smallScreen) {
+  .info-banner {
+    font-size: 0.8rem;
+    ul {
+      // justify-content: stretch;
+      flex-wrap: wrap;
+    }
+  }
   .nav {
     border-bottom: 2px solid #eaeaeb;
-    height: 15.3rem;
-
+    // New code
+    // height: 15.3rem;
+    div#logo {
+      width: 100%;
+      margin: 0;
+    }
     div#logo a {
       float: left;
       position: relative;
