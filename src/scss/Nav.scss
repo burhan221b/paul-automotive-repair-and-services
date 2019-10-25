@@ -47,7 +47,11 @@ $largeScreen: 825px;
   // line-height: 70px;
 
   // New Code
-  position: relative;
+  // position: relative;
+  position: absolute;
+  background: rgba(230, 230, 230, 0.5);
+  width: 100%;
+  z-index: 1000;
   font-family: "Anton", sans-serif;
   display: flex;
   justify-content: space-between;
@@ -76,7 +80,8 @@ $largeScreen: 825px;
       h2 {
         // margin-bottom: ;
         color: #890406;
-        font-weight: 200;
+        font-weight: 100;
+        letter-spacing: 0.5px;
       }
       .blue {
         color: #083b66;
@@ -124,21 +129,23 @@ $largeScreen: 825px;
   }
   // Navigation
   .menu {
-    margin: 0 30px 0 0;
+    margin: 10px 30px 0 0;
 
     a {
-      font-family: "Anton", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
       clear: right;
       text-decoration: none;
       color: #083b66;
       margin: 0 10px;
       line-height: 70px;
       font-size: 1.5rem;
-      //   font-weight: 700;
+      font-weight: 700;
 
       // Hover effect
       &:hover {
-        border-bottom: 5px solid #f26767;
+        // border-bottom: 5px solid #f26767;
+        border-bottom: 5px solid #890406;
       }
     }
     .active {
@@ -186,7 +193,7 @@ $largeScreen: 825px;
         font-size: 1rem;
         // font-weight: 700;
         &:hover {
-          background: #d1dae3;
+          // background: #d1dae3;
           border-bottom: 0px;
         }
 
@@ -278,6 +285,7 @@ $largeScreen: 825px;
     }
   }
   .nav {
+    position: relative;
     border-bottom: 2px solid #eaeaeb;
     // New code
     // height: 15.3rem;

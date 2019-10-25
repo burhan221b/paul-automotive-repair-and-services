@@ -28,7 +28,10 @@ export default function Home() {
                                 <img src="./Images/images/accident-adult-auto-2244746.jpg" alt="man service for car" />
                                 <div className="headline">
                                     <h2>Paul Nguyen</h2>
+                                    {/* <img src="./Images/logo/asecertified.png" alt="man service for car" />
+                                    <img src="./Images/logo/starsmogcertified.png" alt="man service for car" /> */}
                                     <h3>Service Manager - Master ASE Certified</h3>
+
                                     <h3>Complete Auto Repair - Licensed Smog Check Station </h3>
                                 </div>
                                 <div className="credits headline-credits">Photo by Malte Lu from Pexels</div>

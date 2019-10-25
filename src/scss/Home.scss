@@ -73,6 +73,15 @@ div.main-grid {
       z-index: 5;
       padding: 1rem;
 
+      img {
+        // position: absolute;
+        // width: 50%;
+        max-width: 100px;
+        height: 100px;
+        display: inline-block;
+        // border-radius: 30px;
+      }
+
       h2 {
         font-size: 3rem;
         margin: 0.5rem;
