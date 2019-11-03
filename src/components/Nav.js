@@ -48,10 +48,18 @@ class Nav extends React.Component {
                     <label htmlFor="toggle">&#9776;</label>
                     <input type="checkbox" id="toggle" checked={this.state.checked} onChange={this.handleCheckboxChange} />
                     <div className="menu">
-                        <NavLink to="/" exact onClick={this.handleCheckboxChange}>Home</NavLink>
-                        <NavLink to="/services" exact onClick={this.handleCheckboxChange}>Services</NavLink>
+                        <a href="/" onClick={this.handleCheckboxChange}>Home</a>
+                        <a href="#services" onClick={this.handleCheckboxChange}>Services</a>
+                        <a href="#about" onClick={this.handleCheckboxChange}>About</a>
+                        <a href="#contact" onClick={this.handleCheckboxChange}>Contact</a>
+                        {/* <NavLink to="/" exact onClick={this.handleCheckboxChange}>Home</NavLink> */}
+                        {/* <NavLink to="/" exact onClick={this.handleCheckboxChange}>Home</NavLink> */}
+                        {/* <NavLink to="#services" exact onClick={this.handleCheckboxChange}>Services</NavLink> */}
+                        {/* <NavLink to="#about" exact onClick={this.handleCheckboxChange}>About</NavLink> */}
+                        {/* <NavLink to="#contact" exact onClick={this.handleCheckboxChange}>Contact</NavLink> */}
+                        {/* <NavLink to="/services" exact onClick={this.handleCheckboxChange}>Services</NavLink>
                         <NavLink to="/about" exact onClick={this.handleCheckboxChange}>About</NavLink>
-                        <NavLink to="/contact" exact onClick={this.handleCheckboxChange}>Contact</NavLink>
+                        <NavLink to="/contact" exact onClick={this.handleCheckboxChange}>Contact</NavLink> */}
                     </div>
                 </div>
             </header >

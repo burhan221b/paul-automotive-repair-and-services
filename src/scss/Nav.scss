@@ -247,6 +247,11 @@ $largeScreen: 825px;
         opacity: 1;
         overflow: hidden;
         z-index: 100;
+
+        &:hover {
+          background-color: #083b66;
+          color: white;
+        }
       }
 
       // For Link highlight
