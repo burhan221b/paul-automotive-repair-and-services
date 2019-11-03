@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Spring, config } from 'react-spring/renderprops';
 import ScrollableAnchor, { goToTop } from 'react-scrollable-anchor';
@@ -7,6 +7,8 @@ import ScrollableAnchor, { goToTop } from 'react-scrollable-anchor';
 import ServiceFlips from './subcomponents/ServiceFlips';
 import YelpReviewCard from '../components/subcomponents/YelpReviewCard';
 
+// ReactStrap causes some issues with card animation
+// import EmailModal from './EmailModal';
 
 // CSS
 import "../scss/Home.scss";
@@ -33,9 +35,9 @@ export default function Home() {
                                     <img src="./Images/logo/starsmogcertified.png" alt="man service for car" /> */}
                                     <h3>Service Manager - Master ASE Certified</h3>
 
-                                    <h3>Complete Auto Repair - Licensed Smog Check Station </h3>
+                                    <h3>Complete Auto Repair - Licensed Smog Check Station</h3>
                                 </div>
-                                <div className="credits headline-credits">Photo by Malte Lu from Pexels</div>
+                                <div className="credits headline-credits">Photo by Malte Lu from Pexels </div>
                             </div>
                         </section>
                         <div className="slider"></div>
@@ -84,6 +86,7 @@ export default function Home() {
                     </div>
                 </section>
             </ScrollableAnchor>
+
             {/* Location & About */}
             <ScrollableAnchor id={'about'}>
                 <section className="grid-3">
@@ -106,11 +109,15 @@ export default function Home() {
 
             {/* Footer & Footer-image */}
             <ScrollableAnchor id={'contact'}>
-                <footer className="grid-4 main-footer">
+                <footer className="grid-4 main-footer" style={{ position: 'relative' }}>
+                    {/* <div id={'contact'} style={{ zIndex: "10", position: "absolute", top: "30%" }}><div><EmailModal style={{ fontWeight: "700" }}>Contact US</EmailModal></div></div> */}
                     <div className="footer-1 footer-image">
                         <img className="footer-img" src="./Images/images/maarten-van-den-heuvel-gZXx8lKAb7Y-unsplash.jpg" alt="Bay Area" />
 
                         <h3>Need Service? Just Call, Or Show Up - That Simple</h3>
+
+
+
                         <div className="headline">
                             <ul>
                                 <p>Address</p>
