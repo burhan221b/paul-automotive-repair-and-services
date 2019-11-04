@@ -31,11 +31,12 @@ export default function Home() {
                                 <img src="./Images/images/accident-adult-auto-2244746.jpg" alt="man service for car" />
                                 <div className="headline">
                                     <h2>Paul Nguyen</h2>
-                                    {/* <img src="./Images/logo/asecertified.png" alt="man service for car" />
-                                    <img src="./Images/logo/starsmogcertified.png" alt="man service for car" /> */}
                                     <h3>Service Manager - Master ASE Certified</h3>
-
                                     <h3>Complete Auto Repair - Licensed Smog Check Station</h3>
+                                    <h3 className="worklogos">
+                                        <img src="./Images/logo/aseLogo.png" alt="Smog" />
+                                        <img src="./Images/logo/SMOGLOGO.jpg" alt="Smog certified" />
+                                    </h3>
                                 </div>
                                 <div className="credits headline-credits">Photo by Malte Lu from Pexels </div>
                             </div>
@@ -91,9 +92,13 @@ export default function Home() {
             <ScrollableAnchor id={'about'}>
                 <section className="grid-3">
                     {/* <img src="./Images/svg/auto.svg" alt="background image" /> */}
-                    <h2>About Us</h2>
+                    <h2>About Us - <span style={{ color: "#083b66" }}>Meet Paul!</span></h2>
                     <div className="about-container">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p>... and his team of mechanics and auto service experts.
+Paul is an ASE Master technician, servings the Great Silicon Community for more than 15 years.
+Over the years he’s been through it all from installing a simple side rails for a truck to a complete repair of a broken transmission.
+He personally picked his team of technician and mechanics to handle any auto repair and service you need. No nickel and dimming, just saving you money with the best quality service.
+</p>
                     </div>
                     <div className="reivews">
                         <h2><span className="yelp-font">yelp</span> Reivews</h2>
@@ -152,27 +157,51 @@ export default function Home() {
 
 const EngineF = props => <div className="front"><img src="./Images/icons/png/042-engine-1.png" width="100px" alt="engine" /><br />Engine</div>;
 const EngineB = props => <div className="back"><p className="service-text">
-    A motor vehicle service or tune-up is a series of maintenance procedures carried out at a set time interval or after the vehicle has travelled a certain distance. A complete service history usually adds to the resale value of a vehicle.
-    </p>
+    <ul>
+        <li>Tune Ups</li>
+        <li>Transmission Repair</li>
+        <li>Belt Alignment and Repair</li>
+    </ul>
+</p>
 
 
 </div>;
 
 const SmogF = props => <div className="front"><img src="./Images/icons/png/002-exhaust-pipe.png" width="100px" alt="Smog" /><br />Smog Test</div>;
 const SmogB = props => <div className="back"><p className="service-text">
-    A motor vehicle service or tune-up is a series of maintenance procedures carried out at a set time interval or after the vehicle has travelled a certain distance. </p></div>;
+    <ul>
+        <li>Smog Check and Testing</li></ul></p></div>;
 
 const OilF = props => <div className="front"><img src="./Images/icons/png/045-gasoline.png" width="100px" alt="Oil" /><br />Oil Change</div>;
 const OilB = props => <div className="back"><p className="service-text">
-    A motor vehicle service or tune-up is a series of maintenance procedures carried out at a set time interval or after the vehicle has travelled a certain distance. The service intervals are specified by the vehicle manufacturer in a service schedule and some modern cars display the due date for the next service electronically on the instrument panel.
-    </p></div>;
+    <ul>
+        <li>
+            Quick and Easy Oil Change
+     </li>
+        <li>
+            Premium oil
+     </li>
+    </ul>
+</p></div>;
 
 const BrakesF = props => <div className="front"><img src="./Images/icons/png/028-brake.png" width="100px" alt="brakes" /><br />Brakes Replacement</div>;
-const BrakesB = props => <div className="back"><p className="service-text">A motor vehicle service or tune-up is a series of maintenance procedures carried out at a set time interval or after the vehicle has travelled a certain distance. The service intervals are specified by the vehicle manufacturer</p></div>;
+const BrakesB = props => <div className="back"><p className="service-text">
+    <ul>
+        <li>
+            Repair and Replace brakes</li>
+        <li>Replace Discs</li></ul></p></div>;
 
 const BatteryF = props => <div className="front"><img src="./Images/icons/png/017-battery.png" width="100px" alt="battery" /><br />Battery Replacement</div>;
-const BatteryB = props => <div className="back"><p className="service-text">A motor vehicle service or tune-up is a series of maintenance procedures carried out at a set time interval or after the vehicle has travelled a certain distance. The service intervals are specified by the vehicle manufacturer in a service schedule and some modern cars display the due date for the next</p></div>;
+const BatteryB = props => <div className="back"><p className="service-text">
+    <ul>
+        <li>Battery check</li>
+        <li>Replacement</li></ul></p></div>;
 
 const InstallF = props => <div className="front"><img src="./Images/icons/png/031-car-lights.png" width="100px" alt="Install" /><br />Other Installation</div>;
-const InstallB = props => <div className="back"><p className="service-text">A motor vehicle service or tune-up is a series of maintenance procedures carried out at a set time interval or after the vehicle has travelled a certain distance. The service intervals are specified by the vehicle manufacturer in a service schedule and some modern cars display the due date for the next service electronically on the instrument panel. </p></div>;
+const InstallB = props => <div className="back"><p className="service-text">
+    <ul>
+
+        <li>Tires Check, Removal, and Installation</li>
+        <li>Exterior addition to vehicle</li>
+    </ul> </p></div>;
 
