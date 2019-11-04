@@ -26,16 +26,15 @@ const App = () => {
     <Router>
       <div className="App">
         <Nav />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/google8f61f935e8518ee6.html" exact component={VerifyGoogle} />
-          {/* <Route path="/services/:id" exact component={Home} />
+        {/* <Switch> */}
+        <Route path="/" exact component={Home} />
+        {/* <Route path="/services/:id" exact component={Home} />
           <Route path="/about/:id" exact component={Home} />
           <Route path="/contact/:id" exact component={Home} /> */}
-          {/* <Route path="/services/:id" exact component={Services} />
+        {/* <Route path="/services/:id" exact component={Services} />
           <Route path="/about/:id" exact component={About} />
           <Route path="/contact/:id" exact component={Contact} /> */}
-        </Switch>
+        {/* </Switch> */}
       </div>
 
     </Router>
