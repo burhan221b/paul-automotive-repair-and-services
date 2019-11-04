@@ -52,6 +52,7 @@ class Nav extends React.Component {
                         <a href="#services" onClick={this.handleCheckboxChange}>Services</a>
                         <a href="#about" onClick={this.handleCheckboxChange}>About</a>
                         <a href="#contact" onClick={this.handleCheckboxChange}>Contact</a>
+                        <NavLink to="/google8f61f935e8518ee6.html" exact onClick={this.handleCheckboxChange}>Google</NavLink>
                         {/* <NavLink to="/" exact onClick={this.handleCheckboxChange}>Home</NavLink> */}
                         {/* <NavLink to="/" exact onClick={this.handleCheckboxChange}>Home</NavLink> */}
                         {/* <NavLink to="#services" exact onClick={this.handleCheckboxChange}>Services</NavLink> */}
