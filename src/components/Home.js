@@ -156,52 +156,52 @@ He personally picked his team of technician and mechanics to handle any auto rep
 // const Back = props => <div className="back" />
 
 const EngineF = props => <div className="front"><img src="./Images/icons/png/042-engine-1.png" width="100px" alt="engine" /><br />Engine</div>;
-const EngineB = props => <div className="back"><p className="service-text">
-    <ul>
-        <li>Tune Ups</li>
-        <li>Transmission Repair</li>
-        <li>Belt Alignment and Repair</li>
-    </ul>
-</p>
+const EngineB = props => <div className="back"><ul className="service-text">
+
+    <li>Tune Ups</li>
+    <li>Transmission Repair</li>
+    <li>Belt Alignment and Repair</li>
+
+</ul>
 
 
 </div>;
 
 const SmogF = props => <div className="front"><img src="./Images/icons/png/002-exhaust-pipe.png" width="100px" alt="Smog" /><br />Smog Test</div>;
-const SmogB = props => <div className="back"><p className="service-text">
-    <ul>
-        <li>Smog Check and Testing</li></ul></p></div>;
+const SmogB = props => <div className="back"><ul className="service-text">
+
+    <li>Smog Check and Testing</li></ul></div>;
 
 const OilF = props => <div className="front"><img src="./Images/icons/png/045-gasoline.png" width="100px" alt="Oil" /><br />Oil Change</div>;
-const OilB = props => <div className="back"><p className="service-text">
-    <ul>
-        <li>
-            Quick and Easy Oil Change
+const OilB = props => <div className="back"><ul className="service-text">
+
+    <li>
+        Quick and Easy Oil Change
      </li>
-        <li>
-            Premium oil
+    <li>
+        Premium oil
      </li>
-    </ul>
-</p></div>;
+
+</ul></div>;
 
 const BrakesF = props => <div className="front"><img src="./Images/icons/png/028-brake.png" width="100px" alt="brakes" /><br />Brakes Replacement</div>;
-const BrakesB = props => <div className="back"><p className="service-text">
-    <ul>
-        <li>
-            Repair and Replace brakes</li>
-        <li>Replace Discs</li></ul></p></div>;
+const BrakesB = props => <div className="back"><ul className="service-text">
+
+    <li>
+        Repair and Replace brakes</li>
+    <li>Replace Discs</li></ul></div>;
 
 const BatteryF = props => <div className="front"><img src="./Images/icons/png/017-battery.png" width="100px" alt="battery" /><br />Battery Replacement</div>;
-const BatteryB = props => <div className="back"><p className="service-text">
-    <ul>
-        <li>Battery check</li>
-        <li>Replacement</li></ul></p></div>;
+const BatteryB = props => <div className="back"><ul className="service-text">
+
+    <li>Battery check</li>
+    <li>Replacement</li></ul></div>;
 
 const InstallF = props => <div className="front"><img src="./Images/icons/png/031-car-lights.png" width="100px" alt="Install" /><br />Other Installation</div>;
-const InstallB = props => <div className="back"><p className="service-text">
-    <ul>
+const InstallB = props => <div className="back"><ul className="service-text">
 
-        <li>Tires Check, Removal, and Installation</li>
-        <li>Exterior addition to vehicle</li>
-    </ul> </p></div>;
+
+    <li>Tires Check, Removal, and Installation</li>
+    <li>Exterior addition to vehicle</li>
+</ul></div>;
 
